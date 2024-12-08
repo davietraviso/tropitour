@@ -1,0 +1,79 @@
+/* Updated side panel styles */
+.beach-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transform: translateX(100%); /* Start off-screen to the right */
+  transition: transform 0.3s ease-in-out; /* Smooth sliding animation */
+  z-index: 1000;
+}
+
+.beach-panel.open {
+  transform: translateX(0); /* Slide in */
+}
+
+.beach-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.beach-panel-body {
+  padding: 15px;
+}
+
+.image-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-carousel img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.beach-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.additional-info {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.action-button {
+  display: block;
+  margin: 20px auto 0; /* Center the button horizontally */
+  padding: 10px 20px;
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
