@@ -550,15 +550,15 @@ header {
 /* For very small screens (phones <480px) */
 @media only screen and (max-width: 480px) {
     .penjelasan_sub p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .penjelasan_big h1 {
-        font-size: 24px;
+        font-size: 24px !important;
     }
 
     .tombol p {
-        font-size: 14px;
-        padding: 8px 16px;
+        font-size: 14px !important;
+        padding: 8px 16px !important;
     }
 }
