@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +25,34 @@ const Sidebar = () => {
         }}
       >
         <div style={{ padding: "20px" }}>
-          <h2 style={{marginTop:'50px'}}>Menu</h2>
+          <h2 style={{ marginTop: "50px" }}>Menu</h2>
           <ul style={{ listStyle: "none", padding: 0 }}>
-            <li style={{ marginBottom: "15px" }}>Home</li>
-            <li style={{ marginBottom: "15px" }}>About</li>
-            <li style={{ marginBottom: "15px" }}>Contact</li>
+            <li style={{ marginBottom: "15px" }}>
+              <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
+                Home
+              </Link>
+            </li>
+            <li style={{ marginBottom: "15px" }}>
+              <Link to="/about" style={{ textDecoration: "none", color: "#fff" }}>
+                About
+              </Link>
+            </li>
+            <li style={{ marginBottom: "15px" }}>
+              <Link
+                to="/contact"
+                style={{ textDecoration: "none", color: "#fff" }}
+              >
+                Contact
+              </Link>
+            </li>
+            <li style={{ marginBottom: "15px" }}>
+              <Link
+                to="/bantu-data-baru"
+                style={{ textDecoration: "none", color: "#fff" }}
+              >
+                Bantu Data Baru
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -44,7 +68,6 @@ const Sidebar = () => {
           background: "transparent",
           border: "none",
           cursor: "pointer",
-          
         }}
       >
         <i
