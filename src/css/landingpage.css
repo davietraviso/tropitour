@@ -58,7 +58,16 @@ header {
  
 /* Style Homepage Header */
 
+@media (max-width: 1024px) {
+    .hide-on-mobile {
+      display: none;
+    }
 
+    .center-on-mobile {
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
 
 
 @media only screen and (max-width: 768px) {
@@ -81,7 +90,7 @@ header {
     }
 
     .tombol {
-        flex-direction: row; /* Stack buttons vertically */
+        flex-direction: column; /* Stack buttons vertically */
         align-items: center;
         justify-content: center;
         gap: 20px; /* Add spacing between buttons */
