@@ -85,7 +85,7 @@ header {
         align-items: center;
         justify-content: center;
         gap: 20px; /* Add spacing between buttons */
-        height: 100px !important; /* Allow height to adjust */
+        height: 70px !important; /* Allow height to adjust */
     }
 
     .tombol_col{
