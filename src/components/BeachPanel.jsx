@@ -35,6 +35,36 @@ const BeachPanel = ({ selectedBeach, onClose }) => {
           <button onClick={handleNext}>➡️</button>
         </div>
 
+        {/* Add a button to open the HTML file */}
+        <div className="open-folder">
+          <a
+            href="/setumu2/index.html"
+            target="_blank" // Opens in a new tab
+            rel="noopener noreferrer" // Prevents security vulnerabilities
+            className="open-folder-btn"
+            style={{
+              display: "inline-block",
+              padding: "10px 20px",
+              backgroundColor: "#20516d",
+              color: "#fff",
+              textDecoration: "none",
+              borderRadius: "5px",
+              marginTop: "20px",
+              textAlign: "center",
+              fontWeight: "bold",
+              transition: "background-color 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = "#101b3b";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = "#20516d";
+            }}
+          >
+            Open Folder
+          </a>
+        </div>
+
         
       </div>
 

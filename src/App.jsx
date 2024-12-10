@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" Component={landingpage}/>
           <Route path='/tropitour-map' Component={map}/>
-         <Route path="/bantu-data-baru" element={<BantuDataBaru />} />
+          <Route path="/bantu-data-baru" element={<BantuDataBaru />} />
           {/* <Route path='/pantai-setumu' Component={''}/> */}
         </Routes>
       </BrowserRouter>
