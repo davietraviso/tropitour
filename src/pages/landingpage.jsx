@@ -44,7 +44,7 @@ const handleNavigateToMap  = () => {
                     }}
                     >
                     {/* First Col (Bottom Left) */}
-                    <Col style={{ width: "fit-content" }}>
+                    <Col className='tombol_col' style={{ width: "fit-content" }}>
                         <div style={{ justifyItems: "start" }}>
                         <p
                             onClick={handleNavigateToMap}
@@ -86,8 +86,11 @@ const handleNavigateToMap  = () => {
                     </Col>
 
                     {/* Second Col (Bottom Right) */}
-                    <Col style={{ width: "fit-content" }}>
-                        <div style={{ justifyItems: "end" }}>
+                    <Col className='tombol_col' style={{ width: "fit-content" }}>
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "flex-end",
+                            }}>
                         <p
                             onClick={handleNavigateToMap}
                             style={{
