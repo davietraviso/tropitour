@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .beach-banner {
     position: fixed; /* Keeps it pinned to the top */
     top: 0; /* Ensures it aligns with the top of the screen */
