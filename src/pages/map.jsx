@@ -9,6 +9,12 @@ export const map = () => {
 
   // Toggle panel when the beach icon is clicked
   const handleBeachClick = (beach) => {
+    // Reset zoom and scroll to the top of the page
+    document.body.style.transform = "scale(1)";
+    document.body.style.transformOrigin = "top left";
+    window.scrollTo(0, 0);
+  
+    // Toggle the panel
     if (selectedBeach && selectedBeach.name === beach.name) {
       setSelectedBeach(null); // Close panel if the same beach is clicked again
     } else {
@@ -16,24 +22,6 @@ export const map = () => {
     }
   };
   
-
-  const beaches = [
-    {
-      name: "Pantai Tanjung Siambang",
-      description: "A beautiful beach with white sands.",
-      images: ["https://via.placeholder.com/300x200"],
-      buttonText: "Ayo cek 360 derajat nya!",
-      x: "3%", // Horizontal position
-      y: "30%", // Vertical position
-    },
-    {
-      name: "Beach B",
-      description: "A secluded beach with clear waters.",
-      images: ["https://via.placeholder.com/300x200"],
-      x: "70%", // Horizontal position
-      y: "75%", // Vertical position
-    },
-  ];
   
 
   const handleIconClick = (beach) => {
