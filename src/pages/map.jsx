@@ -57,31 +57,51 @@ export const map = () => {
                     backgroundPosition: "center",      // Centers the background image
                     height: "100vh",                   // Makes the container full height
                 }}>
-                <Container className="penjelasan_container">
+                <div className="beach-banner" >
+                  <h1>
+                    Selamat Datang di<br />
+                    <span>Pantai Tanjung Siambang</span>
+                  </h1>
+                </div>
+
+                <Container className="penjelasan_container2 ">
                     {/* Map Section */}
                     <div style={{ position: "relative", height: "100vh", width: "100%" }}>
-                        {/* Example beach icons */}
-                        {beaches.map((beach, index) => (
-                            <button
-                                key={index}
-                                className="beach-icon"
-                                style={{
-                                position: "absolute",
-                                top: beach.y, // Use the y-coordinate
-                                left: beach.x, // Use the x-coordinate
-                                background: "none",
-                                border: "none",
-                                cursor: "pointer",
-                                }}
-                                onClick={() => handleBeachClick(beach)}
-                            >
-                                <img
-                                src={beachIcon}
-                                alt={beach.name}
-                                style={{ width: "90px", height: "70px" }}
-                                />
-                            </button>
-                        ))}
+                        {/* Individual Beach Icons */}
+                        <button
+                          className="beach-icon beach-tanjung-siambang"
+                          onClick={() =>
+                            handleBeachClick({
+                              name: "Pantai Tanjung Siambang",
+                              description: "A beautiful beach with white sands.",
+                              images: ["https://via.placeholder.com/300x200"],
+                              buttonText: "Ayo cek 360 derajat nya!",
+                            })
+                          }
+                        >
+                          <img
+                            src={beachIcon}
+                            alt="Pantai Tanjung Siambang"
+                            style={{ width: "90px", height: "70px" }}
+                          />
+                        </button>
+
+                        <button
+                          className="beach-icon beach-b"
+                          onClick={() =>
+                            handleBeachClick({
+                              name: "Beach B",
+                              description: "A secluded beach with clear waters.",
+                              images: ["https://via.placeholder.com/300x200"],
+                            })
+                          }
+                        >
+                          <img
+                            src={beachIcon}
+                            alt="Beach B"
+                            style={{ width: "90px", height: "70px" }}
+                          />
+                        </button>
                     </div>
 
                     {/* Side Panel */}

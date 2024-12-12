@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../css/beachpanel.css";
+import one from '../assets/1.png';
+import two from '../assets/2.png';
 
 const BeachPanel = ({ selectedBeach, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -27,49 +29,34 @@ const BeachPanel = ({ selectedBeach, onClose }) => {
       <div className="beach-panel-body">
         <p>{selectedBeach?.description}</p>
         <div className="image-carousel">
-          <button onClick={handlePrevious}>⬅️</button>
+          <button className="carousel-btn" onClick={handlePrevious}>
+            ⬅
+          </button>
           <img
             src={selectedBeach?.images[currentImageIndex]}
             alt={selectedBeach?.name}
+            className="carousel-image"
           />
-          <button onClick={handleNext}>➡️</button>
+          <button className="carousel-btn" onClick={handleNext}>
+            ➡
+          </button>
         </div>
 
-        {/* Add a button to open the HTML file */}
+        {/* Open folder button */}
         <div className="open-folder">
           <a
             href="/setumu2/index.html"
-            target="_blank" // Opens in a new tab
-            rel="noopener noreferrer" // Prevents security vulnerabilities
+            target="_blank"
+            rel="noopener noreferrer"
             className="open-folder-btn"
-            style={{
-              display: "inline-block",
-              padding: "10px 20px",
-              backgroundColor: "#20516d",
-              color: "#fff",
-              textDecoration: "none",
-              borderRadius: "5px",
-              marginTop: "20px",
-              textAlign: "center",
-              fontWeight: "bold",
-              transition: "background-color 0.3s ease",
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.backgroundColor = "#101b3b";
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.backgroundColor = "#20516d";
-            }}
           >
-            Open Folder
+            Ayo cek 360 derajat nya!
           </a>
         </div>
-
-        
       </div>
-
     </div>
   );
 };
+
 
 export default BeachPanel;

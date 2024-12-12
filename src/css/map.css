@@ -1,0 +1,74 @@
+.beach-banner {
+    position: fixed; /* Keeps it pinned to the top */
+    top: 0; /* Ensures it aligns with the top of the screen */
+    left: 50%; /* Shifts the banner's horizontal center point */
+    transform: translateX(-50%); /* Centers the banner relative to the screen */
+    z-index: 100; /* Stays above other content */
+    /* width: 100%;  */
+    text-align: center;
+    background-color: rgba(255, 223, 186, 0.9); /* Beachy sandy color */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    border-bottom: 4px solid #f4a261; /* Orange beachy border */
+    font-family: 'Pacifico', cursive; /* Fun beachy font */
+    color: #264653; /* Teal text */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+  }
+  
+  .beach-banner h1 {
+    font-size: 2rem; /* Adjust as needed */
+    margin: 0;
+  }
+  
+  .beach-banner span {
+    font-size: 2.5rem; /* Make the beach name bigger */
+    color: #e76f51; /* Coral color */
+  }
+  
+  /* Adding decoration */
+  .beach-banner::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 10px;
+    background: linear-gradient(90deg, #f4a261, #2a9d8f);
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+  
+
+.beach-icon {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+
+/* Position for Pantai Tanjung Siambang */
+.beach-tanjung-siambang {
+    top: 30%; /* Adjust vertical position */
+    left: 3%; /* Adjust horizontal position */
+}
+  
+  /* Position for Beach B */
+.beach-b {
+    top: 75%; /* Adjust vertical position */
+    left: 70%; /* Adjust horizontal position */
+}
+  
+@media (max-width: 450px) {
+    .beach-banner {
+
+        width: 50% !important;
+    }
+
+  }
+  
+  @media (max-width: 768px) {
+    .beach-banner {
+
+        width: 100% !important;
+    }
+  }
+  

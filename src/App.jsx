@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { map } from './pages/map';
 import BantuDataBaru from './components/BantuDataBaru';
 import './css/landingpage.css'
+import './css/map.css'
 
 
 
