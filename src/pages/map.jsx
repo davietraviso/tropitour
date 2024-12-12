@@ -103,13 +103,10 @@ export const map = () => {
                     {/* Side Panel */}
                     <BeachPanel
                         selectedBeach={selectedBeach}
-                        onClose={() => setSelectedBeach(null)}
+                        onClose={handleClosePanel}
                     />
                 </Container>
-            </div>
-
-            {/* Side Panel */}
-            <BeachPanel selectedBeach={selectedBeach} onClose={handleClosePanel} />
+            </div>      
         </section>
     </div>
   );
