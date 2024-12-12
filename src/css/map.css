@@ -76,12 +76,7 @@
   }
   
   @media (max-width: 768px) {
-    .beach-panel {
-        width: 100%; /* Make the panel take the full width */
-        height: 100vh; /* Full height for better readability */
-        overflow-y: auto; /* Add scrolling for content if it overflows */
-    }
-
+    
     .beach-banner {
 
         width: 80% !important;

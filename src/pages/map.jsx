@@ -9,27 +9,35 @@ export const map = () => {
 
   // Toggle panel when the beach icon is clicked
   const handleBeachClick = (beach) => {
-    // Reset zoom and scroll to the top of the page
-    document.body.style.transform = "scale(1)";
-    document.body.style.transformOrigin = "top left";
-    window.scrollTo(0, 0);
-  
-    // Toggle the panel
     if (selectedBeach && selectedBeach.name === beach.name) {
       setSelectedBeach(null); // Close panel if the same beach is clicked again
+      resetViewport(); // Restore pinch-to-zoom capability
     } else {
       setSelectedBeach(beach); // Open panel for the clicked beach
+      resetZoom(); // Reset zoom when a panel opens
     }
   };
   
-  
-
-  const handleIconClick = (beach) => {
-    setSelectedBeach(beach);
+  const resetZoom = () => {
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    metaViewport.setAttribute(
+      "content",
+      "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    );
   };
+  
+  const resetViewport = () => {
+    const metaViewport = document.querySelector('meta[name="viewport"]');
+    metaViewport.setAttribute(
+      "content",
+      "width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    );
+  };
+  
 
   const handleClosePanel = () => {
     setSelectedBeach(null);
+    resetViewport();
   };
 
   return (
@@ -92,11 +100,11 @@ export const map = () => {
                         </button>
                     </div>
 
-                    {/* Side Panel
+                    {/* Side Panel */}
                     <BeachPanel
                         selectedBeach={selectedBeach}
                         onClose={() => setSelectedBeach(null)}
-                    /> */}
+                    />
                 </Container>
             </div>
 
