@@ -92,11 +92,11 @@ export const map = () => {
                         </button>
                     </div>
 
-                    {/* Side Panel */}
+                    {/* Side Panel
                     <BeachPanel
                         selectedBeach={selectedBeach}
                         onClose={() => setSelectedBeach(null)}
-                    />
+                    /> */}
                 </Container>
             </div>
 
