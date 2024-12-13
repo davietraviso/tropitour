@@ -43,20 +43,51 @@
     position: absolute;
     background: none;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
   }
 
 
 /* Position for Pantai Tanjung Siambang */
 .beach-tanjung-siambang {
-    top: 30%; /* Adjust vertical position */
+    top: 40%; /* Adjust vertical position */
     left: 3%; /* Adjust horizontal position */
 }
   
   /* Position for Beach B */
 .beach-b {
-    top: 75%; /* Adjust vertical position */
-    left: 70%; /* Adjust horizontal position */
+    top: 78%; /* Adjust vertical position */
+    left: 68%; /* Adjust horizontal position */
+}
+
+.beach-c {
+    top: 85%; /* Adjust vertical position */
+    left: 62%; /* Adjust horizontal position */
+}
+
+.beach-d {
+    top: 73%; /* Adjust vertical position */
+    left: 33%; /* Adjust horizontal position */
+}
+
+.beach-e {
+    top: 65%; /* Adjust vertical position */
+    left: 27%; /* Adjust horizontal position */
+}
+
+.beach-f {
+    top: 58%; /* Adjust vertical position */
+    left: 22%; /* Adjust horizontal position */
+}
+
+.beach-g {
+    top: 52%; /* Adjust vertical position */
+    left: 15%; /* Adjust horizontal position */
+}
+
+.shop-a {
+    top: 83%; /* Adjust vertical position */
+    left: 80%; /* Adjust horizontal position */
 }
   
 @media (max-width: 450px) {

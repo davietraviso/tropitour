@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BeachPanel from "../components/BeachPanel";
 import beachIcon from "../assets/beachicon.png"; // Example path for the beach icon
 import beachimg from "../assets/beach.png"
+import shopIcon from "../assets/shopicon.png"
 import { Container } from "react-bootstrap";
 
 export const map = () => {
@@ -54,9 +55,9 @@ export const map = () => {
                     height: "100vh",                   // Makes the container full height
                 }}>
                 <div className="beach-banner" >
-                  <h1>
+                  <h1 style={{paddingTop:'15px'}}> 
                     Selamat Datang di<br />
-                    <span>Pantai Tanjung Siambang</span>
+                    <span>Area Wisata Tanjung Siambang</span>
                   </h1>
                 </div>
 
@@ -95,6 +96,108 @@ export const map = () => {
                           <img
                             src={beachIcon}
                             alt="Beach B"
+                            style={{ width: "90px", height: "70px" }}
+                          />
+                        </button>
+
+                        <button
+                          className="beach-icon beach-c"
+                          onClick={() =>
+                            handleBeachClick({
+                              name: "Beach C",
+                              description: "A secluded beach with clear waters.",
+                              images: ["https://via.placeholder.com/300x200"],
+                            })
+                          }
+                        >
+                          <img
+                            src={beachIcon}
+                            alt="Beach C"
+                            style={{ width: "90px", height: "70px" }}
+                          />
+                        </button>
+
+                        <button
+                          className="beach-icon beach-d"
+                          onClick={() =>
+                            handleBeachClick({
+                              name: "Beach D",
+                              description: "A secluded beach with clear waters.",
+                              images: ["https://via.placeholder.com/300x200"],
+                            })
+                          }
+                        >
+                          <img
+                            src={beachIcon}
+                            alt="Beach D"
+                            style={{ width: "90px", height: "70px" }}
+                          />
+                        </button>
+
+                        <button
+                          className="beach-icon beach-e"
+                          onClick={() =>
+                            handleBeachClick({
+                              name: "Beach E",
+                              description: "A secluded beach with clear waters.",
+                              images: ["https://via.placeholder.com/300x200"],
+                            })
+                          }
+                        >
+                          <img
+                            src={beachIcon}
+                            alt="Beach E"
+                            style={{ width: "90px", height: "70px" }}
+                          />
+                        </button>
+
+                        <button
+                          className="beach-icon beach-f"
+                          onClick={() =>
+                            handleBeachClick({
+                              name: "Beach F",
+                              description: "A secluded beach with clear waters.",
+                              images: ["https://via.placeholder.com/300x200"],
+                            })
+                          }
+                        >
+                          <img
+                            src={beachIcon}
+                            alt="Beach F"
+                            style={{ width: "90px", height: "70px" }}
+                          />
+                        </button>
+
+                        <button
+                          className="beach-icon beach-g"
+                          onClick={() =>
+                            handleBeachClick({
+                              name: "Beach G",
+                              description: "A secluded beach with clear waters.",
+                              images: ["https://via.placeholder.com/300x200"],
+                            })
+                          }
+                        >
+                          <img
+                            src={beachIcon}
+                            alt="Beach G"
+                            style={{ width: "90px", height: "70px" }}
+                          />
+                        </button>
+
+                        <button
+                          className="beach-icon shop-a"
+                          onClick={() =>
+                            handleBeachClick({
+                              name: "Shop A",
+                              description: "A secluded beach with clear waters.",
+                              images: ["https://via.placeholder.com/300x200"],
+                            })
+                          }
+                        >
+                          <img
+                            src={shopIcon}
+                            alt="Shop A"
                             style={{ width: "90px", height: "70px" }}
                           />
                         </button>

@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 400px;
+  width: 450px;
   height: 100%;
   background: linear-gradient(135deg, #cce7f7, #e3f3fa); /* Light beach blue */
   box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
@@ -132,4 +132,11 @@
   height: 3px;
   background: #cce7f7; /* Beach blue separator */
   border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px) { 
+  .beach-panel {
+    width: 100%;
+  }
+
 }
