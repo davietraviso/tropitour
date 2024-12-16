@@ -106,6 +106,55 @@
         color: #e76f51; /* Coral color */
       }
 
+    .beachIcon {
+      width: 30px !important;
+      height: auto !important;
+    }
+
+    /* Position */
+
+    /* Position for Pantai Tanjung Siambang */
+    .beach-tanjung-siambang {
+      top: 48%; /* Adjust vertical position */
+      left: 3%; /* Adjust horizontal position */
+    }
+
+    /* Position for Beach B */
+    .beach-b {
+      top: 56%; /* Adjust vertical position */
+      left: 66%; /* Adjust horizontal position */
+    }
+
+    .beach-c {
+      top: 58%; /* Adjust vertical position */
+      left: 60%; /* Adjust horizontal position */
+    }
+
+    .beach-d {
+      top: 55%; /* Adjust vertical position */
+      left: 32%; /* Adjust horizontal position */
+    }
+
+    .beach-e {
+      top: 53%; /* Adjust vertical position */
+      left: 27%; /* Adjust horizontal position */
+    }
+
+    .beach-f {
+      top: 51%; /* Adjust vertical position */
+      left: 22%; /* Adjust horizontal position */
+    }
+
+    .beach-g {
+      top: 50%; /* Adjust vertical position */
+      left: 15%; /* Adjust horizontal position */
+    }
+
+    .shop-a {
+      top: 58%; /* Adjust vertical position */
+      left: 78%; /* Adjust horizontal position */
+    }
+
   }
   
   @media (max-width: 768px) {

@@ -76,7 +76,8 @@ export const map = () => {
                             })
                           }
                         >
-                          <img
+                          <img 
+                            className="beachIcon"
                             src={beachIcon}
                             alt="Pantai Tanjung Siambang"
                             style={{ width: "90px", height: "70px" }}
@@ -94,6 +95,7 @@ export const map = () => {
                           }
                         >
                           <img
+                            className="beachIcon"
                             src={beachIcon}
                             alt="Beach B"
                             style={{ width: "90px", height: "70px" }}
@@ -111,6 +113,7 @@ export const map = () => {
                           }
                         >
                           <img
+                            className="beachIcon"
                             src={beachIcon}
                             alt="Beach C"
                             style={{ width: "90px", height: "70px" }}
@@ -128,6 +131,7 @@ export const map = () => {
                           }
                         >
                           <img
+                            className="beachIcon"
                             src={beachIcon}
                             alt="Beach D"
                             style={{ width: "90px", height: "70px" }}
@@ -145,6 +149,7 @@ export const map = () => {
                           }
                         >
                           <img
+                            className="beachIcon"
                             src={beachIcon}
                             alt="Beach E"
                             style={{ width: "90px", height: "70px" }}
@@ -162,6 +167,7 @@ export const map = () => {
                           }
                         >
                           <img
+                            className="beachIcon"
                             src={beachIcon}
                             alt="Beach F"
                             style={{ width: "90px", height: "70px" }}
@@ -179,6 +185,7 @@ export const map = () => {
                           }
                         >
                           <img
+                            className="beachIcon"
                             src={beachIcon}
                             alt="Beach G"
                             style={{ width: "90px", height: "70px" }}
@@ -196,6 +203,7 @@ export const map = () => {
                           }
                         >
                           <img
+                            className="beachIcon"
                             src={shopIcon}
                             alt="Shop A"
                             style={{ width: "90px", height: "70px" }}
