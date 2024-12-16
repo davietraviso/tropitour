@@ -5,6 +5,8 @@ import beachimg from "../assets/beach.png"
 import shopIcon from "../assets/shopicon.png"
 import { Container } from "react-bootstrap";
 import Sidebar from "../components/Sidebar";
+import Legend from "../components/MapLegend";
+
 
 export const map = () => {
   const [selectedBeach, setSelectedBeach] = useState(null);
@@ -45,6 +47,7 @@ export const map = () => {
   return (
     <div>
         <Sidebar/>
+        <Legend/>
         <section>
             <div className="penjelasan w-100 min-vh-100"
                 style={{
