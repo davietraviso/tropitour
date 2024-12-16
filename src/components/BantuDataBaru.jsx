@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Sidebar from "./Sidebar";
+import styles from "../css/BantuDataBaru.module.css";
 
 const BantuDataBaru = () => {
   const [formData, setFormData] = useState({
@@ -24,81 +26,81 @@ const BantuDataBaru = () => {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
-        Bantu Data Baru
-      </h2>
-      <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: "15px" }}>
-          <label>Nama:</label>
-          <input
-            type="text"
-            name="nama"
-            value={formData.nama}
-            onChange={handleChange}
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            required
-          />
-        </div>
-        <div style={{ marginBottom: "15px" }}>
-          <label>Subyek:</label>
-          <input
-            type="text"
-            name="subyek"
-            value={formData.subyek}
-            onChange={handleChange}
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            required
-          />
-        </div>
-        <div style={{ marginBottom: "15px" }}>
-          <label>Koordinat:</label>
-          <input
-            type="text"
-            name="koordinat"
-            value={formData.koordinat}
-            onChange={handleChange}
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            required
-          />
-        </div>
-        <div style={{ marginBottom: "15px" }}>
-          <label>Unggah Foto:</label>
-          <input
-            type="file"
-            name="foto"
-            onChange={handleChange}
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            required
-          />
-        </div>
-        <div style={{ marginBottom: "15px" }}>
-          <label>Keterangan:</label>
-          <textarea
-            name="keterangan"
-            value={formData.keterangan}
-            onChange={handleChange}
-            rows="5"
-            style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          style={{
-            display: "block",
-            width: "100%",
-            padding: "10px",
-            backgroundColor: "#101b3b",
-            color: "#fff",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          Submit
-        </button>
-      </form>
-    </div>
+    <>
+      <Sidebar />
+      <div className={styles.formContainer}>
+        <h2 className={styles.title}>Bantu Data Baru</h2>
+        <form onSubmit={handleSubmit}>
+          {/* Nama */}
+          <div className={styles.inputGroup}>
+            <label className={styles.label}>Nama:</label>
+            <input
+              type="text"
+              name="nama"
+              value={formData.nama}
+              onChange={handleChange}
+              className={styles.input}
+              required
+            />
+          </div>
+
+          {/* Subyek */}
+          <div className={styles.inputGroup}>
+            <label className={styles.label}>Subyek:</label>
+            <input
+              type="text"
+              name="subyek"
+              value={formData.subyek}
+              onChange={handleChange}
+              className={styles.input}
+              required
+            />
+          </div>
+
+          {/* Koordinat */}
+          <div className={styles.inputGroup}>
+            <label className={styles.label}>Koordinat:</label>
+            <input
+              type="text"
+              name="koordinat"
+              value={formData.koordinat}
+              onChange={handleChange}
+              className={styles.input}
+              required
+            />
+          </div>
+
+          {/* Unggah Foto */}
+          <div className={styles.inputGroup}>
+            <label className={styles.label}>Unggah Foto:</label>
+            <input
+              type="file"
+              name="foto"
+              onChange={handleChange}
+              className={styles.input}
+              required
+            />
+          </div>
+
+          {/* Keterangan */}
+          <div className={styles.inputGroup}>
+            <label className={styles.label}>Keterangan:</label>
+            <textarea
+              name="keterangan"
+              value={formData.keterangan}
+              onChange={handleChange}
+              className={styles.textarea}
+              required
+            ></textarea>
+          </div>
+
+          {/* Submit Button */}
+          <button type="submit" className={styles.submitButton}>
+            Submit
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

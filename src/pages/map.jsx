@@ -4,6 +4,7 @@ import beachIcon from "../assets/beachicon.png"; // Example path for the beach i
 import beachimg from "../assets/beach.png"
 import shopIcon from "../assets/shopicon.png"
 import { Container } from "react-bootstrap";
+import Sidebar from "../components/Sidebar";
 
 export const map = () => {
   const [selectedBeach, setSelectedBeach] = useState(null);
@@ -43,6 +44,7 @@ export const map = () => {
 
   return (
     <div>
+        <Sidebar/>
         <section>
             <div className="penjelasan w-100 min-vh-100"
                 style={{
@@ -73,6 +75,7 @@ export const map = () => {
                               description: "A beautiful beach with white sands.",
                               images: ["https://via.placeholder.com/300x200"],
                               buttonText: "Ayo cek 360 derajat nya!",
+                              location: "puta"
                             })
                           }
                         >

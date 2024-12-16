@@ -89,8 +89,121 @@
     top: 83%; /* Adjust vertical position */
     left: 80%; /* Adjust horizontal position */
 }
+@media (max-width: 1200px) {
+    
+  .beach-banner {
+
+      width: 80% !important;
+  }
+
+  .beachIcon {
+    width: 80px !important;
+    height: auto !important;
+  }
+
+  /* Position */
+
+  /* Position for Pantai Tanjung Siambang */
+  .beach-tanjung-siambang {
+    top: 44%; /* Adjust vertical position */
+    left: 5%; /* Adjust horizontal position */
+  }
+
+  /* Position for Beach B */
+  .beach-b {
+    top: 66%; /* Adjust vertical position */
+    left: 66%; /* Adjust horizontal position */
+  }
+
+  .beach-c {
+    top: 70%; /* Adjust vertical position */
+    left: 60%; /* Adjust horizontal position */
+  }
+
+  .beach-d {
+    top: 64%; /* Adjust vertical position */
+    left: 34%; /* Adjust horizontal position */
+  }
+
+  .beach-e {
+    top: 58%; /* Adjust vertical position */
+    left: 30%; /* Adjust horizontal position */
+  }
+
+  .beach-f {
+    top: 54%; /* Adjust vertical position */
+    left: 22%; /* Adjust horizontal position */
+  }
+
+  .beach-g {
+    top: 50%; /* Adjust vertical position */
+    left: 15%; /* Adjust horizontal position */
+  }
+
+  .shop-a {
+    top: 66%; /* Adjust vertical position */
+    left: 76%; /* Adjust horizontal position */
+  }
+}
   
-@media (max-width: 450px) {
+  @media (max-width: 768px) {
+    
+    .beach-banner {
+
+        width: 80% !important;
+    }
+
+    .beachIcon {
+      width: 65px !important;
+      height: auto !important;
+    }
+
+    /* Position */
+
+    /* Position for Pantai Tanjung Siambang */
+    .beach-tanjung-siambang {
+      top: 46%; /* Adjust vertical position */
+      left: 3%; /* Adjust horizontal position */
+    }
+
+    /* Position for Beach B */
+    .beach-b {
+      top: 62%; /* Adjust vertical position */
+      left: 66%; /* Adjust horizontal position */
+    }
+
+    .beach-c {
+      top: 65%; /* Adjust vertical position */
+      left: 60%; /* Adjust horizontal position */
+    }
+
+    .beach-d {
+      top: 60%; /* Adjust vertical position */
+      left: 32%; /* Adjust horizontal position */
+    }
+
+    .beach-e {
+      top: 55%; /* Adjust vertical position */
+      left: 27%; /* Adjust horizontal position */
+    }
+
+    .beach-f {
+      top: 51%; /* Adjust vertical position */
+      left: 22%; /* Adjust horizontal position */
+    }
+
+    .beach-g {
+      top: 50%; /* Adjust vertical position */
+      left: 15%; /* Adjust horizontal position */
+    }
+
+    .shop-a {
+      top: 66%; /* Adjust vertical position */
+      left: 76%; /* Adjust horizontal position */
+    }
+  }
+
+  @media (max-width: 450px) {
     .beach-banner {
 
         width: 50% !important;
@@ -156,12 +269,71 @@
     }
 
   }
-  
-  @media (max-width: 768px) {
-    
+
+  @media (max-width: 350px) {
     .beach-banner {
 
-        width: 80% !important;
+        width: 50% !important;
     }
+
+    .beach-banner h1 {
+        font-size: 20px; /* Adjust as needed */
+        margin: 0;
+      }
+      
+      .beach-banner span {
+        font-size: 25px; /* Make the beach name bigger */
+        color: #e76f51; /* Coral color */
+      }
+
+    .beachIcon {
+      width: 30px !important;
+      height: auto !important;
+    }
+
+    /* Position */
+
+    /* Position for Pantai Tanjung Siambang */
+    .beach-tanjung-siambang {
+      top: 48%; /* Adjust vertical position */
+      left: -4%; /* Adjust horizontal position */
+    }
+
+    /* Position for Beach B */
+    .beach-b {
+      top: 56%; /* Adjust vertical position */
+      left: 66%; /* Adjust horizontal position */
+    }
+
+    .beach-c {
+      top: 58%; /* Adjust vertical position */
+      left: 60%; /* Adjust horizontal position */
+    }
+
+    .beach-d {
+      top: 55%; /* Adjust vertical position */
+      left: 32%; /* Adjust horizontal position */
+    }
+
+    .beach-e {
+      top: 53%; /* Adjust vertical position */
+      left: 27%; /* Adjust horizontal position */
+    }
+
+    .beach-f {
+      top: 51%; /* Adjust vertical position */
+      left: 22%; /* Adjust horizontal position */
+    }
+
+    .beach-g {
+      top: 50%; /* Adjust vertical position */
+      left: 15%; /* Adjust horizontal position */
+    }
+
+    .shop-a {
+      top: 58%; /* Adjust vertical position */
+      left: 78%; /* Adjust horizontal position */
+    }
+
   }
   

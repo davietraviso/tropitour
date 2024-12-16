@@ -13,6 +13,10 @@ const navigate = useNavigate();
 const handleNavigateToMap  = () => {
     navigate("/tropitour-map"); 
 };
+
+const handleNavigateToAbout  = () => {
+    navigate("/tentang-kami"); 
+};
   return (
     <div>
         <Sidebar/>
@@ -47,7 +51,7 @@ const handleNavigateToMap  = () => {
                     <Col className='tombol_col hide-on-mobile' style={{ width: "fit-content" }}>
                         <div style={{ justifyItems: "start" }}>
                         <p
-                            onClick={handleNavigateToMap}
+                            onClick={handleNavigateToAbout}
                             style={{
                             border: "2px solid #101b3b",
                             textAlign: "center",
