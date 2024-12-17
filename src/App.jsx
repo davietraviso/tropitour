@@ -8,6 +8,7 @@ import './css/landingpage.css'
 import './css/map.css'
 import AboutUs from './pages/aboutus';
 import ContactUs from './pages/contactus';
+import UnderConstruction from './pages/UnderConstruction';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/tropitour-map' Component={map}/>
           <Route path='/kontak' Component={ContactUs}/>
           <Route path="/bantu-data-baru" element={<BantuDataBaru />} />
+          <Route path="/construction" Component={UnderConstruction}/>
           {/* <Route path='/pantai-setumu' Component={''}/> */}
         </Routes>
       </BrowserRouter>
