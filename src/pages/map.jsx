@@ -7,6 +7,53 @@ import { Container } from "react-bootstrap";
 import Sidebar from "../components/Sidebar";
 import Legend from "../components/MapLegend";
 
+import berkah1 from "../assets/pantai/berkah1.jpg"
+import berkah2 from "../assets/pantai/berkah2.png"
+import berkah3 from "../assets/pantai/berkah3.png"
+
+import gaseng1 from "../assets/pantai/gaseng1.jpg"
+import gaseng2 from "../assets/pantai/gaseng2.jpg"
+import gaseng3 from "../assets/pantai/gaseng3.jpg"
+import gaseng4 from "../assets/pantai/gaseng4.jpg"
+
+import ica1 from "../assets/pantai/ica1.png"
+import ica2 from "../assets/pantai/ica2.jpg"
+import ica3 from "../assets/pantai/ica3.jpg"
+import ica4 from "../assets/pantai/ica4.jpg"
+import ica5 from "../assets/pantai/ica5.jpg"
+import ica6 from "../assets/pantai/ica6.jpg"
+
+import nabila1 from "../assets/pantai/nabila1.jpg"
+import nabila2 from "../assets/pantai/nabila2.jpg"
+import nabila3 from "../assets/pantai/nabila3.jpg"
+import nabila4 from "../assets/pantai/nabila4.jpg"
+import nabila5 from "../assets/pantai/nabila5.jpg"
+import nabila6 from "../assets/pantai/nabila6.jpg"
+
+import paser1 from "../assets/pantai/paser1.png"
+import paser2 from "../assets/pantai/paser2.png"
+import paser3 from "../assets/pantai/paser3.png"
+import paser4 from "../assets/pantai/paser4.png"
+
+import sejiwa1 from "../assets/pantai/sejiwa1.jpg"
+import sejiwa2 from "../assets/pantai/sejiwa2.jpg"
+import sejiwa3 from "../assets/pantai/sejiwa3.jpg"
+import sejiwa4 from "../assets/pantai/sejiwa4.jpg"
+import sejiwa5 from "../assets/pantai/sejiwa5.jpg"
+import sejiwa6 from "../assets/pantai/sejiwa6.jpg"
+
+import sejuta1 from "../assets/pantai/sejuta1.jpg"
+import sejuta2 from "../assets/pantai/sejuta2.png"
+import sejuta3 from "../assets/pantai/sejuta3.png"
+import sejuta4 from "../assets/pantai/sejuta4.jpg"
+
+import setumu1 from "../assets/pantai/setumu1.jpg"
+import setumu2 from "../assets/pantai/setumu2.jpg"
+import setumu3 from "../assets/pantai/setumu3.png"
+import setumu4 from "../assets/pantai/setumu4.png"
+import setumu5 from "../assets/pantai/setumu5.png"
+import setumu6 from "../assets/pantai/setumu6.png"
+
 
 export const map = () => {
   const [selectedBeach, setSelectedBeach] = useState(null);
@@ -74,11 +121,16 @@ export const map = () => {
                           className="beach-icon beach-tanjung-siambang"
                           onClick={() =>
                             handleBeachClick({
-                              name: "Pantai Tanjung Siambang",
-                              description: "A beautiful beach with white sands.",
-                              images: ["https://via.placeholder.com/300x200"],
-                              buttonText: "Ayo cek 360 derajat nya!",
-                              location: "puta"
+                              name: "Pantai Tanjung Setumu",
+                              description: "Pantai paling populer di pulau Dompak yang cocok menjadi tempat melihat sunset. 🌅",
+                              images: [setumu1, setumu2, setumu3, setumu4, setumu5, setumu6],
+                              location: "Tanjung Siambang, Dompak",
+                              weather: "Sunny",
+                              popularity: "Tinggi",
+                              thingsToDo: ["🏊‍♂️ Berenang", "🥘 Bersantap kuliner", "🌅 Lihat sunset"],
+                              funFact: "Jalan perjalanan ke sini memang kurang menyenangkan, namun pemandangannya enggak berkhianat deh! Jangan lupa kunjungi restorannya, ya!",
+                              link360: "/setumu2/index.html",
+                              visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
                         >
@@ -94,9 +146,16 @@ export const map = () => {
                           className="beach-icon beach-b"
                           onClick={() =>
                             handleBeachClick({
-                              name: "Beach B",
-                              description: "A secluded beach with clear waters.",
-                              images: ["https://via.placeholder.com/300x200"],
+                              name: "Pantai Sejiwa",
+                              description: "Pantai mini dengan popularitas tinggi.",
+                              images: [sejiwa1, sejiwa2, sejiwa3, sejiwa4, sejiwa5, sejiwa6],
+                              location: "Tanjung Siambang, Dompak",
+                              weather: "Sunny",
+                              popularity: "Tinggi",
+                              thingsToDo: ["🧘‍♀️ Bersantai", "☕ Ngopi", "🎤 Karaokean"],
+                              funFact: "Walau pantainya kecil, tapi tiap weekend selalu dibooking lho! Jadi yang hendak berkunjung, hendaklah berkabar dulu ya!",
+                              link360: "https://360view-pantai-sejiwa.com",
+                              visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
                         >
@@ -112,9 +171,16 @@ export const map = () => {
                           className="beach-icon beach-c"
                           onClick={() =>
                             handleBeachClick({
-                              name: "Beach C",
-                              description: "A secluded beach with clear waters.",
-                              images: ["https://via.placeholder.com/300x200"],
+                              name: "Pantai Nabila",
+                              description: "Pantai dengan langganan tempat untuk buka bersama saat bulan Ramadhan.",
+                              images: [nabila1, nabila2, nabila3, nabila4, nabila5, nabila6],
+                              location: "Tanjung Siambang, Dompak",
+                              weather: "Sunny",
+                              popularity: "Sedang",
+                              thingsToDo: ["🏊‍♂️ Berenang",  "🧘‍♀️ Bersantai", "⚽ Bermain Bola"],
+                              funFact: "Satu-satunya pantai di Tanjung Siambang yang memiliki lapangan!",
+                              link360: "https://360view-pantai-sejiwa.com",
+                              visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
                         >
@@ -130,9 +196,16 @@ export const map = () => {
                           className="beach-icon beach-d"
                           onClick={() =>
                             handleBeachClick({
-                              name: "Beach D",
-                              description: "A secluded beach with clear waters.",
-                              images: ["https://via.placeholder.com/300x200"],
+                              name: "Pantai Pase Putih",
+                              description: "Pantai strategis yang menjiwai namanya sendiri.",
+                              images: [paser1, paser2, paser3, paser4],
+                              location: "Tanjung Siambang, Dompak",
+                              weather: "Sunny",
+                              popularity: "Tinggi",
+                              thingsToDo: ["🧘‍♀️ Bersantai", "🎣 Memancing", "🏊‍♂️ Berenang", "🥘 Santap Kuliner"],
+                              funFact: "Sesuai namanya, pasir di pantai ini sangat putih lho! Dan juga ada restoran di sini.",
+                              link360: "https://360view-pantai-sejiwa.com",
+                              visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
                         >
@@ -148,9 +221,16 @@ export const map = () => {
                           className="beach-icon beach-e"
                           onClick={() =>
                             handleBeachClick({
-                              name: "Beach E",
-                              description: "A secluded beach with clear waters.",
-                              images: ["https://via.placeholder.com/300x200"],
+                              name: "Pantai Berkah",
+                              description: "Pantai mini namun super bersih.",
+                              images: [berkah1, berkah2, berkah3],
+                              location: "Tanjung Siambang, Dompak",
+                              weather: "Sunny",
+                              popularity: "Sedang",
+                              thingsToDo: ["🧘‍♀️ Bersantai", "🏊‍♂️ Berenang"],
+                              funFact: "Pengelola pantai di sini tinggal di pantai nya juga, jadi kalau ada keperluan, sangat fast respond!",
+                              link360: "https://360view-pantai-sejiwa.com",
+                              visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
                         >
@@ -166,9 +246,16 @@ export const map = () => {
                           className="beach-icon beach-f"
                           onClick={() =>
                             handleBeachClick({
-                              name: "Beach F",
-                              description: "A secluded beach with clear waters.",
-                              images: ["https://via.placeholder.com/300x200"],
+                              name: "Pantai Sejuta Pasir",
+                              description: "Pantai dengan pondok-pondok paling estetik.",
+                              images: [sejuta1, sejuta2, sejuta3, sejuta4],
+                              location: "Tanjung Siambang, Dompak",
+                              weather: "Sunny",
+                              popularity: "Sedang",
+                              thingsToDo: ["🧘‍♀️ Bersantai", "🏊‍♂️ Berenang"],
+                              funFact: "Pondok di sini sangat rapi penempatannya, sehingga terlihat lebih menarik.",
+                              link360: "https://360view-pantai-sejiwa.com",
+                              visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
                         >
@@ -184,9 +271,16 @@ export const map = () => {
                           className="beach-icon beach-g"
                           onClick={() =>
                             handleBeachClick({
-                              name: "Beach G",
-                              description: "A secluded beach with clear waters.",
-                              images: ["https://via.placeholder.com/300x200"],
+                              name: "Pantai Gaseng",
+                              description: "Pantai yang sangat tertata rapi dan penuh akan kejutan.",
+                              images: [gaseng1, gaseng2, gaseng3, gaseng4],
+                              location: "Tanjung Siambang, Dompak",
+                              weather: "Sunny",
+                              popularity: "Tinggi",
+                              thingsToDo: ["🎉 Gathering", "🏊‍♂️ Berenang", "🧘‍♀️ Bersantai"],
+                              funFact: "Dengan area yang cukup luas, pantai ini cocok menjadi lokasi gathering ramai-ramai.",
+                              link360: "https://360view-pantai-sejiwa.com",
+                              visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
                         >
@@ -202,9 +296,17 @@ export const map = () => {
                           className="beach-icon shop-a"
                           onClick={() =>
                             handleBeachClick({
-                              name: "Shop A",
-                              description: "A secluded beach with clear waters.",
-                              images: ["https://via.placeholder.com/300x200"],
+                              name: "Rumah Makan Ica",
+                              description: "Restoran Seafood yang menawarkan bermacam-macam kuliner.",
+                              location: "yyo mama",
+                              images: [ica1, ica2, ica3, ica4, ica5, ica6],
+                              location: "Tanjung Siambang, Dompak",
+                              weather: "Sunny",
+                              popularity: "Medium",
+                              thingsToDo: ["🥘 Santap Kuliner", "🧘‍♀️ Bersantai" ],
+                              funFact: "This beach is named after the Sejiwa coral formation.",
+                              link360: "https://360view-pantai-sejiwa.com",
+                              visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
                         >
