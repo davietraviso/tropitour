@@ -11,7 +11,7 @@ export const landingpage = () => {
 
 const navigate = useNavigate();
 const handleNavigateToMap  = () => {
-    navigate("/construction"); 
+    navigate("/tropitour-map"); 
 };
 
 const handleNavigateToAbout  = () => {
