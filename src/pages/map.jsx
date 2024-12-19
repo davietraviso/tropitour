@@ -154,7 +154,7 @@ export const map = () => {
                               popularity: "Tinggi",
                               thingsToDo: ["🧘‍♀️ Bersantai", "☕ Ngopi", "🎤 Karaokean"],
                               funFact: "Walau pantainya kecil, tapi tiap weekend selalu dibooking lho! Jadi yang hendak berkunjung, hendaklah berkabar dulu ya!",
-                              link360: "https://360view-pantai-sejiwa.com",
+                              link360: "/sejiwa/index.html",
                               visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
@@ -179,7 +179,7 @@ export const map = () => {
                               popularity: "Sedang",
                               thingsToDo: ["🏊‍♂️ Berenang",  "🧘‍♀️ Bersantai", "⚽ Bermain Bola"],
                               funFact: "Satu-satunya pantai di Tanjung Siambang yang memiliki lapangan!",
-                              link360: "https://360view-pantai-sejiwa.com",
+                              link360: "/nabila/index.html",
                               visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
@@ -204,7 +204,7 @@ export const map = () => {
                               popularity: "Tinggi",
                               thingsToDo: ["🧘‍♀️ Bersantai", "🎣 Memancing", "🏊‍♂️ Berenang", "🥘 Santap Kuliner"],
                               funFact: "Sesuai namanya, pasir di pantai ini sangat putih lho! Dan juga ada restoran di sini.",
-                              link360: "https://360view-pantai-sejiwa.com",
+                              link360: "/paseputih/index.html",
                               visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
@@ -229,7 +229,7 @@ export const map = () => {
                               popularity: "Sedang",
                               thingsToDo: ["🧘‍♀️ Bersantai", "🏊‍♂️ Berenang"],
                               funFact: "Pengelola pantai di sini tinggal di pantai nya juga, jadi kalau ada keperluan, sangat fast respond!",
-                              link360: "https://360view-pantai-sejiwa.com",
+                              link360: "/berkah/index.html",
                               visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
@@ -254,7 +254,7 @@ export const map = () => {
                               popularity: "Sedang",
                               thingsToDo: ["🧘‍♀️ Bersantai", "🏊‍♂️ Berenang"],
                               funFact: "Pondok di sini sangat rapi penempatannya, sehingga terlihat lebih menarik.",
-                              link360: "https://360view-pantai-sejiwa.com",
+                              link360: "/sejuta/index.html",
                               visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
@@ -279,7 +279,7 @@ export const map = () => {
                               popularity: "Tinggi",
                               thingsToDo: ["🎉 Gathering", "🏊‍♂️ Berenang", "🧘‍♀️ Bersantai"],
                               funFact: "Dengan area yang cukup luas, pantai ini cocok menjadi lokasi gathering ramai-ramai.",
-                              link360: "https://360view-pantai-sejiwa.com",
+                              link360: "/gaseng/index.html",
                               visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
@@ -305,7 +305,7 @@ export const map = () => {
                               popularity: "Medium",
                               thingsToDo: ["🥘 Santap Kuliner", "🧘‍♀️ Bersantai" ],
                               funFact: "This beach is named after the Sejiwa coral formation.",
-                              link360: "https://360view-pantai-sejiwa.com",
+                              link360: "/rm_ica2/index.html",
                               visitNow: "https://visit-pantai-sejiwa.com",
                             })
                           }
