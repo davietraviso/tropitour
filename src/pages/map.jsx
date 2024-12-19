@@ -130,7 +130,7 @@ export const map = () => {
                               thingsToDo: ["🏊‍♂️ Berenang", "🥘 Bersantap kuliner", "🌅 Lihat sunset"],
                               funFact: "Jalan perjalanan ke sini memang kurang menyenangkan, namun pemandangannya enggak berkhianat deh! Jangan lupa kunjungi restorannya, ya!",
                               link360: "/setumu2/index.html",
-                              visitNow: "https://visit-pantai-sejiwa.com",
+                              visitNow: "https://maps.app.goo.gl/KBgxGrf1DRmQUSvB6",
                             })
                           }
                         >
@@ -155,7 +155,7 @@ export const map = () => {
                               thingsToDo: ["🧘‍♀️ Bersantai", "☕ Ngopi", "🎤 Karaokean"],
                               funFact: "Walau pantainya kecil, tapi tiap weekend selalu dibooking lho! Jadi yang hendak berkunjung, hendaklah berkabar dulu ya!",
                               link360: "/sejiwa/index.html",
-                              visitNow: "https://visit-pantai-sejiwa.com",
+                              visitNow: "https://maps.app.goo.gl/4iC353iz36fnqerX6",
                             })
                           }
                         >
@@ -180,7 +180,7 @@ export const map = () => {
                               thingsToDo: ["🏊‍♂️ Berenang",  "🧘‍♀️ Bersantai", "⚽ Bermain Bola"],
                               funFact: "Satu-satunya pantai di Tanjung Siambang yang memiliki lapangan!",
                               link360: "/nabila/index.html",
-                              visitNow: "https://visit-pantai-sejiwa.com",
+                              visitNow: "https://maps.app.goo.gl/T3JUAi1hUrRYVi8n6",
                             })
                           }
                         >
@@ -205,7 +205,7 @@ export const map = () => {
                               thingsToDo: ["🧘‍♀️ Bersantai", "🎣 Memancing", "🏊‍♂️ Berenang", "🥘 Santap Kuliner"],
                               funFact: "Sesuai namanya, pasir di pantai ini sangat putih lho! Dan juga ada restoran di sini.",
                               link360: "/paseputih/index.html",
-                              visitNow: "https://visit-pantai-sejiwa.com",
+                              visitNow: "https://maps.app.goo.gl/NYN5nHx6phB6WYxPA",
                             })
                           }
                         >
@@ -230,7 +230,7 @@ export const map = () => {
                               thingsToDo: ["🧘‍♀️ Bersantai", "🏊‍♂️ Berenang"],
                               funFact: "Pengelola pantai di sini tinggal di pantai nya juga, jadi kalau ada keperluan, sangat fast respond!",
                               link360: "/berkah/index.html",
-                              visitNow: "https://visit-pantai-sejiwa.com",
+                              visitNow: "https://maps.app.goo.gl/rJuccy5ddshJuzRD9",
                             })
                           }
                         >
@@ -255,7 +255,7 @@ export const map = () => {
                               thingsToDo: ["🧘‍♀️ Bersantai", "🏊‍♂️ Berenang"],
                               funFact: "Pondok di sini sangat rapi penempatannya, sehingga terlihat lebih menarik.",
                               link360: "/sejuta/index.html",
-                              visitNow: "https://visit-pantai-sejiwa.com",
+                              visitNow: "https://maps.app.goo.gl/1d1vuEk7FbmCj9J79",
                             })
                           }
                         >
@@ -280,7 +280,7 @@ export const map = () => {
                               thingsToDo: ["🎉 Gathering", "🏊‍♂️ Berenang", "🧘‍♀️ Bersantai"],
                               funFact: "Dengan area yang cukup luas, pantai ini cocok menjadi lokasi gathering ramai-ramai.",
                               link360: "/gaseng/index.html",
-                              visitNow: "https://visit-pantai-sejiwa.com",
+                              visitNow: "https://maps.app.goo.gl/8kaWaX68VLYvKCFw7",
                             })
                           }
                         >
@@ -306,7 +306,7 @@ export const map = () => {
                               thingsToDo: ["🥘 Santap Kuliner", "🧘‍♀️ Bersantai" ],
                               funFact: "This beach is named after the Sejiwa coral formation.",
                               link360: "/rm_ica2/index.html",
-                              visitNow: "https://visit-pantai-sejiwa.com",
+                              visitNow: "https://maps.app.goo.gl/Mm7B7pXGMHUC2aci6",
                             })
                           }
                         >
