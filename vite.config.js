@@ -1,8 +1,18 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Use '/' for root or '/subpath/' if deploying to a subdirectory
-})
+  server: {
+    open: true, // Membuka browser otomatis saat menjalankan `npm run dev`
+  },
+  build: {
+    outDir: 'dist', // Output folder untuk build
+  },
+  resolve: {
+    alias: {
+      '@': '/src', // Alias untuk direktori src
+    },
+  },
+  base: '/', // Pastikan sesuai dengan "homepage" di package.json
+});
