@@ -10,7 +10,13 @@ import AboutUs from './pages/aboutus';
 import ContactUs from './pages/contactus';
 import UnderConstruction from './pages/UnderConstruction';
 
-
+const LandingPage = () => (
+  <iframe
+    src="/landingpage/index.html"
+    style={{ width: "100%", height: "100vh", border: "none", overflow: "auto" }}
+    title="Static HTML Page"
+  ></iframe>
+);
 
 
 function App() {
@@ -20,7 +26,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" Component={landingpage}/>
+          <Route path="/" element={<LandingPage />}/>
           <Route path='tentang-kami' Component={AboutUs}/>
           <Route path='/tropitour-map' Component={map}/>
           <Route path='/kontak' Component={ContactUs}/>

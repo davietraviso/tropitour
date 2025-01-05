@@ -1,10 +1,10 @@
-import { Container, Row, Col } from 'react-bootstrap'
-import { useState, useEffect, useRef } from "react";
+import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import { useNavigate } from "react-router-dom";
 import bg1 from "../assets/landscape.png"
 import tropilogo from '../assets/tropitour.png'
 import Sidebar from '../components/Sidebar';
 import "bootstrap/dist/css/bootstrap.min.css";
+import img from '../assets/greedy.png'
 
 
 export const landingpage = () => {
@@ -17,6 +17,14 @@ const handleNavigateToMap  = () => {
 const handleNavigateToAbout  = () => {
     navigate("/tentang-kami"); 
 };
+
+const tours = [
+    { id: 1, title: "Pantai Mutun", location: "Kab. Lampung Selatan", image: <img src={img} alt="" /> },
+    { id: 2, title: "Pantai Trikora", location: "Kab. Bintan", image: img },
+    { id: 3, title: "Pantai Nongsa", location: "Kota Batam", image: img },
+    { id: 4, title: "Pantai Tanjung Siambang", location: "Pulau Dompak", image: img }
+  ];
+
   return (
     <div>
         <Sidebar/>
@@ -138,6 +146,27 @@ const handleNavigateToAbout  = () => {
             </div>
             
         </section>
+
+        {/* Section for Virtual Tours */}
+      <section className="tour-section" style={{ backgroundColor: "#f0f8ff", padding: "50px 0" }}>
+      <Container>
+        <h2 style={{ textAlign: "center", color: "#20516d", marginBottom: "30px" }}>Daftar Virtual Tour</h2>
+        <Row>
+          {tours.map((tour) => (
+            <Col key={tour.id} md={3} className="mb-4">
+              <Card style={{ boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", borderRadius: "10px" }}>
+                <Card.Img variant="top" src={tour.img} alt={tour.title} style={{ borderRadius: "10px 10px 0 0" }} />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "18px", fontWeight: "bold", color: "#20516d" }}>{tour.title}</Card.Title>
+                  <Card.Text style={{ fontSize: "14px", color: "#666" }}>{tour.location}</Card.Text>
+                  <Button variant="primary" style={{ backgroundColor: "#20516d", borderColor: "#20516d" }}>Lihat Detail</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
 
     </div>
   )
