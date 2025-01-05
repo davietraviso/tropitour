@@ -644,6 +644,15 @@
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const button = document.querySelector('.btn_1');
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = '/tropitour-map';
+          });
+        });
+      </script>
 </body>
 
 </html>
