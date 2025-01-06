@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { landingpage } from './pages/landingpage'
+import { LandingPage2 } from './pages/landingpage/landingpage2'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { map } from './pages/map';
 import BantuDataBaru from './components/BantuDataBaru';
@@ -26,8 +27,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />}/>
-          <Route path='tentang-kami' Component={AboutUs}/>
+          {/* <Route path="/" element={<LandingPage />}/> */}
+          <Route path='/' Component={LandingPage2}/>
+          <Route path='/tentang-kami' Component={AboutUs}/>
           <Route path='/tropitour-map' Component={map}/>
           <Route path='/kontak' Component={ContactUs}/>
           <Route path="/bantu-data-baru" element={<BantuDataBaru />} />
