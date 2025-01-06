@@ -348,7 +348,7 @@ export const LandingPage2 = () => {
                   Atau pilih-pilih? <br />
                   Coba virtual tour kami sekarang
                 </p>
-                <a href="/tropitour-map" className="btn_1">
+                <a onClick={handleNavigateToMap} className="btn_1">
                   Ayo Coba
                 </a>
               </div>
@@ -395,7 +395,7 @@ export const LandingPage2 = () => {
           </div>
         </div>
         <div className="view_all_btn">
-          <a href="/tropitour-map" className="view_btn">
+          <a onClick={handleNavigateToMap} className="view_btn">
             Lihat Semuanya
           </a>
         </div>
